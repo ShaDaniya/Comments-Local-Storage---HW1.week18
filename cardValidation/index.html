@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>credit card validation</h1>
+    <div>
+        <label for="cardNumber">Введите номер карты</label>
+        <input type="text" id="cardNumber">
+    </div>
+    <button onclick="checkCard();">Проверить</button>
+    <div id="rigthNumber"></div>
+
+    <script>
+        function checkCard() {
+            const pattern =
+                /^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$/;
+            const cardNumber = document.getElementById('cardNumber').value;
+            if (pattern.test(cardNumber)) {
+                document.getElementById('rigthNumber').innerHTML = "Верно";
+            } else {
+                document.getElementById('rigthNumber').innerHTML = "Не верно";
+            }
+        }
+    </script>
+</body>
+
+</html>
