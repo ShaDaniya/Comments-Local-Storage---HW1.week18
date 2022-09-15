@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Input Number</h1>
+    <div>
+        <label for="inputFirstNumber">Введите число</label>
+        <input type="number" />
+    </div>
+    <div>
+        <label for="inputSecondNumber">Введите число</label>
+        <input id="inputNumber" />
+    </div>
+    <div>
+        <button type="button" onclick="checkNumber();">ОК</button>
+    </div>
+    <div id="errorsInfo"></div>
+
+    <script>
+        function checkNumber() {
+            const pattern = /^\d+$/;
+            const checkNumber = document.getElementById('inputNumber').value;
+            if (pattern.test(checkNumber)) {
+                document.getElementById('errorsInfo').innerHTML = 'True'
+            } else {
+                document.getElementById('errorsInfo').innerHTML = 'false'
+            }
+        }
+    </script>
+</body>
+
+</html>
