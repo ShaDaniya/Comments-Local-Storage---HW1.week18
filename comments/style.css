@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.p__comment {
+    width: 500px;
+    border: 1px dashed black;
+    background-color: rgb(228, 241, 246);
+}
+
+.inputs {
+    width: 250px;
+}
+
+.error {
+    color: red;
+    font-size: smaller;
+}
+
+.author {
+    color: rgb(28, 108, 237);
+    font-size: bold;
+    padding-right: 10px;
+}
+
+.comment {
+    color: rgb(43, 42, 42);
+}
+
+#chat {
+    margin-bottom: 10px;
+}

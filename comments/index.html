@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Comments
+        </h1>
+        <div id="chat">
+
+        </div>
+        <!-- <form> -->
+        <div id="container">
+            <div>
+                <label for="author">Имя * <span id="authorError"></span>
+                </label>
+            </div>
+            <div>
+                <input type="text" name="author" id="author" value="" class=inputs />
+            </div>
+        </div>
+        <div>
+            <label for="avatar">Картинка:
+                <!-- <span id="commentError"></span> -->
+            </label>
+        </div>
+        <div>
+            <input type="text" id="avatar" name="avatar" value="" class=inputs />
+            <div>
+                <img src="я получаю ссылку" id="img" width="30%">
+            </div>
+        </div>
+        <div>
+            <label for="comment">Комментарий:
+                <span id="commentError"></span>
+            </label>
+        </div>
+        <div>
+            <textarea name="comment" id="comment" placeholder="Что думаете?" cols="30" rows="5" class=inputs></textarea>
+        </div>
+        <div>
+            <input type="button" name="button" id="button" value="Добавить комментарий" onclick="checkMessage();" />
+        </div>
+    </div>
+    <img src="" alt="">
+    <!-- </form> -->
+
+    <script src="index.js"></script>
+</body>
+
+</html>
